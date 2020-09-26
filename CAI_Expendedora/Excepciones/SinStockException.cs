@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CAI_Expendedora
 {
-    class SinStockException
+    class SinStockException : Exception
     {
+        public SinStockException() : base("No hay stock de latas actualmente.")
+        {
+
+        }
     }
 }

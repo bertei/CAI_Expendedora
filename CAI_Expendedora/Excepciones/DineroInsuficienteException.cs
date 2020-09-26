@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CAI_Expendedora
 {
-    class DineroInsuficienteException
+    class DineroInsuficienteException : Exception
     {
+        public DineroInsuficienteException() : base()
+        {
+
+        }
     }
 }

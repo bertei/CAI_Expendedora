@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CAI_Expendedora
 {
-    class CodigoInvalidoException
+    class CodigoInvalidoException : NullReferenceException
     {
+        public CodigoInvalidoException() : base("Codigo invalido.")
+        {
+
+        }
     }
 }

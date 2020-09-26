@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CAI_Expendedora
 {
-    class CapacidadInsuficienteException
+    class CapacidadInsuficienteException : Exception
     {
+        public CapacidadInsuficienteException() : base("Capacidad insuficiente.")
+        {
+
+        }
     }
 }
